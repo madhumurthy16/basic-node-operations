@@ -1,0 +1,19 @@
+{
+  "name": "basic-node-operations",
+  "version": "1.0.0",
+  "description": "Implement the common bash commands - echo, cat, head, and tail.",
+  "main": "bash.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/madhumurthy16/basic-node-operations.git"
+  },
+  "author": "Madhu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/madhumurthy16/basic-node-operations/issues"
+  },
+  "homepage": "https://github.com/madhumurthy16/basic-node-operations#readme"
+}

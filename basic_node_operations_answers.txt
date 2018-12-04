@@ -1,0 +1,33 @@
+1. Run the commands sort, wc and uniq on the commands.js file. Explain how they work and what the output was.
+A: 
+sort filename: returns the file sorted alphabetically by line.
+Output of running sort on commands.js: The output consists of all the lines of the file sorted alphabetically, starting from the innermost nested statements and moving up the levels until the top most tier of statements are sorted.
+
+wc filename: prints newline, word, and byte counts for a file.
+output of running wc on commands.js:  45     123    1064 commands.js. 
+The file commands.js has a total of 45 lines, 123 words and a byte count of 1064 bytes.
+
+uniq filename: sorts each line in a file and only returns different lines. It helps to detect the adjacent duplicate lines and also deletes the duplicate lines.
+Output of running uniq on commands.js: Returns the contents of the entire file, without removing any lines since there are no duplicate lines and every line is unique.
+
+2. Using the pipe (|) connect at least two commands and run it on commands.js. Explain what the output was and why the specific data was outputted. A: cat commands.js | grep "function"
+The bash commands 'cat' and 'grep' are combined using the pipe command. The output of the cat command, which is the entire content of the file commands.js will be the input to the grep command. The grep command searches for the term ‘function’ and outputs all the functions in the file commands.js.
+//Output
+
+function done(output) {
+function evaluateCmd(userInput) {
+	"echo": function(userInput) {
+	"cat": function(fullPath) {
+
+6. Reverse String Given a string, reverse the order of characters in each word within a sentence while maintaining the original word order and whitespace and return the string. 
+
+function reverseString(inputString) {
+    let reverseStringInPlace = [];
+    let strArr = inputString.split(" ");
+    strArr.forEach(word => {
+      let wordReverse = word.split('').reverse().join('');
+      reverseStringInPlace.push(wordReverse);
+    });
+    return reverseStringInPlace.join(' ');
+}
+console.log(reverseString("I'm learning to program algorithms!"));
